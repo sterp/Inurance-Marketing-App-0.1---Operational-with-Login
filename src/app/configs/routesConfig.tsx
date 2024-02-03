@@ -10,11 +10,24 @@ import Error404Page from '../main/404/Error404Page';
 import ExampleConfig from '../main/example/ExampleConfig';
 import CampaignConfig from '../main/campaign/CampaignConfig';
 import AnalyticsConfig from '../main/analytics/AnalyticsConfig';
+import OverviewConfig from '../main/overview/OverviewConfig';
+import WebsiteConfig from '../main/website/WebsiteConfig';
+import TasksConfig from '../main/tasks/TasksConfig';
+import ContentConfig from '../main/content/ContentConfig';
+import SocialConfig from '../main/social/SocialConfig';
+import SeoConfig from '../main/seo/SeoConfig';
+import LocalConfig from '../main/local/LocalConfig';
+import PaidadsConfig from '../main/paidads/PaidadsConfig';
+import EmailmarketingConfig from '../main/emailmarketing/EmailmarketingConfig';
+import ServicesConfig from '../main/services/ServicesConfig';
+import ReputationConfig from '../main/reputation/ReputationConfig';
+import ReportsConfig from '../main/reports/ReportsConfig';
+import UsersConfig from '../main/users/UsersConfig';
 import DemoContent from '@fuse/core/DemoContent';
 
 
 
-const routeConfigs: FuseRouteConfigsType = [AnalyticsConfig, CampaignConfig, ExampleConfig, SignOutConfig, SignInConfig, SignUpConfig];
+const routeConfigs: FuseRouteConfigsType = [UsersConfig, ReportsConfig, ReputationConfig, ServicesConfig, EmailmarketingConfig, PaidadsConfig, LocalConfig, SeoConfig, SocialConfig, ContentConfig, TasksConfig, WebsiteConfig, OverviewConfig, AnalyticsConfig, CampaignConfig, ExampleConfig, SignOutConfig, SignInConfig, SignUpConfig];
 
 /**
  * The routes of the application.

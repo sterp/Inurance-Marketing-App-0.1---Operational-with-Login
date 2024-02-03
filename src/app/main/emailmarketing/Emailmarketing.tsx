@@ -14,7 +14,7 @@ const Root = styled(FusePageSimple)(({ theme }) => ({
 	'& .FusePageSimple-sidebarContent': {}
 }));
 
-function Example() {
+function Emailmarketing() {
 
 	return (
 		<Root
@@ -25,13 +25,13 @@ function Example() {
 			}
 			content={
 				<div className="p-24">
-					<h4>Content</h4>
+					<h4>Emailmarketing</h4>
 					<br />
-					<DemoContent />
+					Emailmarketing Stuff
 				</div>
 			}
 		/>
 	);
 }
 
-export default Example;
+export default Emailmarketing;

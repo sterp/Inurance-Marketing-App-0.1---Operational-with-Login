@@ -14,24 +14,24 @@ const Root = styled(FusePageSimple)(({ theme }) => ({
 	'& .FusePageSimple-sidebarContent': {}
 }));
 
-function Example() {
+function Overview() {
 
 	return (
 		<Root
 			header={
 				<div className="p-24">
-					<h4>{('TITLE')}</h4>
+					<h4>Overview</h4>
 				</div>
 			}
 			content={
 				<div className="p-24">
 					<h4>Content</h4>
 					<br />
-					<DemoContent />
+					Overview Stuff
 				</div>
 			}
 		/>
 	);
 }
 
-export default Example;
+export default Overview;

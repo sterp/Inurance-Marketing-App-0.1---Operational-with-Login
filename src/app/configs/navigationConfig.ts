@@ -1,12 +1,4 @@
-import i18next from 'i18next';
 import { FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
-import ar from './navigation-i18n/ar';
-import en from './navigation-i18n/en';
-import tr from './navigation-i18n/tr';
-
-i18next.addResourceBundle('en', 'navigation', en);
-i18next.addResourceBundle('tr', 'navigation', tr);
-i18next.addResourceBundle('ar', 'navigation', ar);
 
 /**
  * The navigationConfig object is an array of navigation items for the Fuse application.
@@ -15,130 +7,117 @@ const navigationConfig: FuseNavItemType[] = [
 	
 	
 	{
-		id: 'example-component',
-		title: 'Example',
+		id: 'overview-component',
+		title: 'Overview',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'example'
+		icon: 'heroicons-outline:home',
+		url: 'overview'
 	},
 	{
 		id: 'campaign-component',
 		title: 'Campaign',
 		type: 'item',
-		icon: 'heroicons-outline:star',
+		icon: 'heroicons-outline:collection',
 		url: 'campaign'
-	},{
-		id: 'analytics-component',
-		title: 'Analytics',
-		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'analytics'
-	},
-	/*
-	{
-		id: 'content-component',
-		title: 'Content',
-		translate: 'CONTENT',
-		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'content'
 	},
 	{
 		id: 'website-component',
 		title: 'Website',
-		translate: 'WEBSITE',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:desktop-computer',
+		url: 'website'
 	},
 	{
 		id: 'analytics-component',
 		title: 'Analytics',
-		translate: 'ANALYTICS',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:trending-up',
+		url: 'analytics'
 	},
 	{
 		id: 'tasks-component',
 		title: 'Tasks',
-		translate: 'TASKS',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:clipboard-check',
+		url: 'tasks'
+	},
+	{
+		id: 'content-component',
+		title: 'Content',
+		type: 'item',
+		icon: 'heroicons-outline:document-text',
+		url: 'content'
 	},
 	{
 		id: 'social-component',
 		title: 'Social',
-		translate: 'SOCIAL',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:share',
+		url: 'social'
 	},
 	{
 		id: 'seo-component',
 		title: 'SEO',
-		translate: 'SEO',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:globe-alt',
+		url: 'seo'
 	},
 	{
 		id: 'local-component',
 		title: 'Local',
-		translate: 'LOCAL',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:location-marker',
+		url: 'local'
 	},
 	{
 		id: 'paidads-component',
 		title: 'Paid Ads',
-		translate: 'PAIDADS',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:template',
+		url: 'paidads'
 	},
 	{
 		id: 'emailmarketing-component',
 		title: 'Email Marketing',
-		translate: 'EMAILMARKETING',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:mail-open',
+		url: 'emailmarketing'
 	},
 	{
 		id: 'services-component',
 		title: 'Purchase Services',
-		translate: 'SERVICES',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:shield-check',
+		url: 'services'
 	},
 	{
 		id: 'reputation-component',
 		title: 'Reputation',
-		translate: 'REPUTATION',
 		type: 'item',
 		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		url: 'reputation'
 	},
 	{
 		id: 'reports-component',
 		title: 'Reports',
-		translate: 'REPORTS',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
+		icon: 'heroicons-outline:presentation-chart-line',
+		url: 'reports'
 	},
 	{
 		id: 'users-component',
 		title: 'Users',
-		translate: 'USERS',
 		type: 'item',
-		icon: 'heroicons-outline:star',
-		url: 'campaign'
-	},*/
+		icon: 'heroicons-outline:user-group',
+		url: 'users'
+	},
+	{
+		id: 'example-component',
+		title: 'Page Template',
+		type: 'item',
+		icon: 'heroicons-outline:save',
+		url: 'example'
+	},
 ];
 
 export default navigationConfig;

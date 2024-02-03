@@ -14,7 +14,7 @@ const Root = styled(FusePageSimple)(({ theme }) => ({
 	'& .FusePageSimple-sidebarContent': {}
 }));
 
-function Example() {
+function Content() {
 
 	return (
 		<Root
@@ -27,11 +27,11 @@ function Example() {
 				<div className="p-24">
 					<h4>Content</h4>
 					<br />
-					<DemoContent />
+					Content Stuff
 				</div>
 			}
 		/>
 	);
 }
 
-export default Example;
+export default Content;

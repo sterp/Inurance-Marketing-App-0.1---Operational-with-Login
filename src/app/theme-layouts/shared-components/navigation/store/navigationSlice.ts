@@ -4,7 +4,6 @@ import { PartialDeep } from 'type-fest';
 import { FuseFlatNavItemType, FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
 import { selectUserRole, userSliceType } from 'src/app/auth/user/store/userSlice';
 import FuseNavigationHelper from '@fuse/utils/FuseNavigationHelper';
-import i18next from 'i18next';
 import FuseNavItemModel from '@fuse/core/FuseNavigation/models/FuseNavItemModel';
 import FuseUtils from '@fuse/utils';
 import navigationConfig from 'app/configs/navigationConfig';
@@ -111,7 +110,7 @@ export const selectNavigation = createSelector(
 			return data?.map((item) => ({
 				hasPermission: Boolean(FuseUtils.hasPermission(item?.auth, userRole)),
 				...item,
-				...(item?.translate && item?.title ? { title: i18next.t(`navigation:${item?.translate}`) } : {}),
+				...(item?.translate && item?.title ? { title: (`navigation:${item?.translate}`) } : {}),
 				...(item?.children ? { children: setAdditionalData(item?.children) } : {})
 			}));
 		}
