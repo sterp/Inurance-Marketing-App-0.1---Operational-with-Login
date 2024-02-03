@@ -8,8 +8,13 @@ import SignUpConfig from '../main/sign-up/SignUpConfig';
 import SignOutConfig from '../main/sign-out/SignOutConfig';
 import Error404Page from '../main/404/Error404Page';
 import ExampleConfig from '../main/example/ExampleConfig';
+import CampaignConfig from '../main/campaign/CampaignConfig';
+import AnalyticsConfig from '../main/analytics/AnalyticsConfig';
+import DemoContent from '@fuse/core/DemoContent';
 
-const routeConfigs: FuseRouteConfigsType = [ExampleConfig, SignOutConfig, SignInConfig, SignUpConfig];
+
+
+const routeConfigs: FuseRouteConfigsType = [AnalyticsConfig, CampaignConfig, ExampleConfig, SignOutConfig, SignInConfig, SignUpConfig];
 
 /**
  * The routes of the application.
@@ -18,7 +23,7 @@ const routes: FuseRoutesType = [
 	...FuseUtils.generateRoutesFromConfigs(routeConfigs, settingsConfig.defaultAuth),
 	{
 		path: '/',
-		element: <Navigate to="/example" />,
+		element: <Navigate to="/" />,
 		auth: settingsConfig.defaultAuth
 	},
 	{
